@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrikole - Organic Agriculture Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-top">
+    <div class="container navbar-top-inner">
+      <div class="navbar-contact">
+        <span><i class="fas fa-envelope"></i> info@agrikole.com</span>
+        <span><i class="fas fa-phone"></i> +1 (800) 123-4567</span>
+      </div>
+      <div class="navbar-social-top">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="navbar-main">
+    <div class="container navbar-inner">
+      <a href="#" class="navbar-logo">
+        <i class="fas fa-leaf"></i>
+        <span>AGRIKOLE</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon-btn"><i class="fas fa-search"></i></button>
+        <button class="nav-icon-btn"><i class="fas fa-shopping-cart"></i><span class="cart-badge">0</span></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80" alt="Farm landscape" loading="eager" />
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <i class="fas fa-seedling"></i>
+      <span>Organically Fully Organic Products</span>
+    </div>
+    <h1 class="hero-title">We Produce<br /><em>Natural Goods</em></h1>
+    <p class="hero-sub">Fresh from the farm to your table. We grow the finest organic produce<br />using sustainable, eco-friendly farming practices.</p>
+    <a href="#services" class="btn btn-yellow">Learn More <i class="fas fa-arrow-right"></i></a>
+  </div>
+  <div class="hero-scroll" id="heroScroll">
+    <span></span>
+  </div>
+</section>
+
+<!-- ========== INTRO ========== -->
+<section class="intro section-pad" id="about">
+  <div class="container intro-grid">
+    <div class="intro-images fade-in">
+      <div class="intro-img-main">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=700&q=80" alt="Agriculture field" loading="lazy" />
+      </div>
+      <div class="intro-img-secondary">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&q=80" alt="Organic produce" loading="lazy" />
+        <div class="intro-badge">
+          <span class="badge-icon"><i class="fas fa-award"></i></span>
+          <span class="badge-text">100% Organic</span>
+        </div>
+      </div>
+    </div>
+    <div class="intro-content fade-in">
+      <div class="section-label"><i class="fas fa-leaf"></i> About Our Farm</div>
+      <h2 class="section-title">We're Leader in<br />Agriculture Market</h2>
+      <p class="intro-desc">We have been providing the highest quality agricultural products for over 40 years. Our commitment to sustainable farming ensures you receive the freshest, healthiest produce available.</p>
+      <div class="intro-features">
+        <div class="intro-feature">
+          <div class="feature-icon-wrap"><i class="fas fa-apple-alt"></i></div>
+          <div>
+            <h4>Growing Fruits and Vegetables</h4>
+            <p>We cultivate a wide variety of seasonal fruits and vegetables using organic methods.</p>
+          </div>
+        </div>
+        <div class="intro-feature">
+          <div class="feature-icon-wrap"><i class="fas fa-seedling"></i></div>
+          <div>
+            <h4>Tips for Planning your Harvest</h4>
+            <p>Expert guidance on soil preparation, planting schedules, and harvest optimization.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#services" class="btn btn-yellow">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section class="services section-pad bg-light" id="services">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label"><i class="fas fa-leaf"></i> What We Offer</div>
+      <h2 class="section-title">Services We Offer</h2>
+      <p class="section-sub">Discover our wide range of organic agricultural products and services delivered straight from our farm.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&q=80" alt="Fresh Products" loading="lazy" />
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-apple-alt"></i></div>
+          <h3>Fresh Products</h3>
+          <p>Farm-fresh fruits and vegetables harvested daily for maximum nutrition and flavor.</p>
+          <a href="#" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=500&q=80" alt="Agriculture Products" loading="lazy" />
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-tractor"></i></div>
+          <h3>Agriculture Products</h3>
+          <p>High-quality grains, seeds, and agricultural supplies for commercial and home farming.</p>
+          <a href="#" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=500&q=80" alt="Organic Products" loading="lazy" />
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Organic Products</h3>
+          <p>Certified organic produce grown without pesticides or synthetic fertilizers.</p>
+          <a href="#" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=500&q=80" alt="Dairy Products" loading="lazy" />
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-cheese"></i></div>
+          <h3>Dairy</h3>
+          <p>Fresh milk, cheese, and dairy products from our free-range, pasture-fed cows.</p>
+          <a href="#" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STATS BAR ========== -->
+<div class="stats-bar">
+  <div class="container stats-grid">
+    <div class="stat-item fade-in">
+      <span class="stat-num counter" data-target="850">0</span><span class="stat-num">+</span>
+      <p>Farm Partners</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item fade-in">
+      <span class="stat-num counter" data-target="15000">0</span><span class="stat-num">+</span>
+      <p>Happy Customers</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item fade-in">
+      <span class="stat-num counter" data-target="40">0</span><span class="stat-num">+</span>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item fade-in">
+      <span class="stat-num counter" data-target="120">0</span><span class="stat-num">+</span>
+      <p>Product Types</p>
+    </div>
+  </div>
+</div>
+
+<!-- ========== TICKER ========== -->
+<div class="ticker-bar">
+  <div class="ticker-track">
+    <span>WE ARE BEST AGRICULTURE PRODUCTS <i class="fas fa-play"></i></span>
+    <span>WE'RE 100 FARMS SPREADING IN EUROPE <i class="fas fa-play"></i></span>
+    <span>WE ARE BEST AGRICULTURE PRODUCTS <i class="fas fa-play"></i></span>
+    <span>WE'RE 100 FARMS SPREADING IN EUROPE <i class="fas fa-play"></i></span>
+    <span>WE ARE BEST AGRICULTURE PRODUCTS <i class="fas fa-play"></i></span>
+    <span>WE'RE 100 FARMS SPREADING IN EUROPE <i class="fas fa-play"></i></span>
+    <span>WE ARE BEST AGRICULTURE PRODUCTS <i class="fas fa-play"></i></span>
+    <span>WE'RE 100 FARMS SPREADING IN EUROPE <i class="fas fa-play"></i></span>
+  </div>
+</div>
+
+<!-- ========== VIDEO SECTION ========== -->
+<section class="video-section">
+  <div class="video-bg">
+    <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1920&q=80" alt="Agriculture fields" loading="lazy" />
+  </div>
+  <div class="video-overlay"></div>
+  <div class="container video-content fade-in">
+    <div class="video-label"><i class="fas fa-leaf"></i> Modern Agricultural Tools</div>
+    <a href="#" class="play-btn" id="playBtn">
+      <div class="play-ripple"></div>
+      <i class="fas fa-play"></i>
+    </a>
+    <h2 class="video-title">Agriculture Matters to the<br />Future of Development</h2>
+    <p class="video-sub">Sustainable farming practices that protect our environment and ensure food security for generations to come.</p>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="testimonials section-pad bg-light" id="testimonials">
+  <div class="container testimonials-grid">
+    <div class="testimonials-left fade-in">
+      <div class="section-label"><i class="fas fa-leaf"></i> Client Reviews</div>
+      <h2 class="section-title">What Our Customers Are<br />Talking About</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card active" data-index="0">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">"This is due to their excellent service, competitive pricing, and customer support. It's thoroughly refreshing to get such a personal touch. Agrikole has transformed how we source our produce."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="John Morrison" loading="lazy" />
+            <div>
+              <strong>John Morrison</strong>
+              <span>Restaurant Owner</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-index="1">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">"Amazing quality organic produce. We've been working with Agrikole for 3 years and they never disappoint. The freshness and quality of their products are unmatched in the industry."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&q=80" alt="Sarah Williams" loading="lazy" />
+            <div>
+              <strong>Sarah Williams</strong>
+              <span>Organic Market Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-index="2">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">"Reliable, professional, and genuinely committed to sustainable agriculture. Their farm-to-table approach ensures the freshest products every single delivery."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="Robert Chen" loading="lazy" />
+            <div>
+              <strong>Robert Chen</strong>
+              <span>Grocery Chain Director</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-nav">
+        <button class="testi-prev" id="testiPrev"><i class="fas fa-arrow-left"></i></button>
+        <div class="testi-dots" id="testiDots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="testi-next" id="testiNext"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="testimonials-right fade-in">
+      <div class="big-stat">
+        <span class="big-num">4,<span class="counter" data-target="150">0</span>000</span>
+        <p>Satisfied Customers<br />Worldwide</p>
+      </div>
+      <div class="testimonial-imgs">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=300&q=80" alt="Happy customer" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1483181957632-8bda974cbc91?w=300&q=80" alt="Farm produce" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+<section class="projects section-pad" id="projects">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label"><i class="fas fa-leaf"></i> Our Portfolio</div>
+      <h2 class="section-title">Our Recent Projects</h2>
+      <p class="section-sub">Explore our latest agricultural initiatives and sustainable farming projects across the globe.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card fade-in">
+        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=700&q=80" alt="Organic Solutions" loading="lazy" />
+        <div class="project-overlay">
+          <div class="project-cat">Farming</div>
+          <h3>Organic Solutions</h3>
+          <a href="#" class="project-link"><i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <img src="https://images.unsplash.com/photo-1595765558987-c89a0b5bde2c?w=700&q=80" alt="Harvest Innovations" loading="lazy" />
+        <div class="project-overlay">
+          <div class="project-cat">Technology</div>
+          <h3>Harvest Innovations</h3>
+          <a href="#" class="project-link"><i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <img src="https://images.unsplash.com/photo-1500076656116-558758c991c1?w=700&q=80" alt="Agriculture Farming" loading="lazy" />
+        <div class="project-overlay">
+          <div class="project-cat">Sustainability</div>
+          <h3>Agriculture Farming</h3>
+          <a href="#" class="project-link"><i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="projects-more fade-in">
+      <a href="#" class="btn btn-outline-green">View All Projects <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FEATURES ========== -->
+<section class="features-section" id="features">
+  <div class="features-left fade-in">
+    <div class="section-label light"><i class="fas fa-leaf"></i> Why Choose Us</div>
+    <h2 class="section-title light">Agriculture &amp;<br />Eco Farming</h2>
+    <p>We combine generations of farming wisdom with modern sustainable techniques to deliver the highest quality organic products.</p>
+    <a href="#" class="btn btn-yellow">Discover More <i class="fas fa-arrow-right"></i></a>
+  </div>
+  <div class="features-right">
+    <div class="feature-item fade-in">
+      <div class="feature-icon green"><i class="fas fa-seedling"></i></div>
+      <div>
+        <h4>We Use New Techniques</h4>
+        <p>Cutting-edge precision farming methods for optimal yield and quality.</p>
+      </div>
+    </div>
+    <div class="feature-item fade-in">
+      <div class="feature-icon green"><i class="fas fa-tractor"></i></div>
+      <div>
+        <h4>Smart Farm Services</h4>
+        <p>IoT-connected monitoring systems for real-time crop health management.</p>
+      </div>
+    </div>
+    <div class="feature-item fade-in">
+      <div class="feature-icon green"><i class="fas fa-recycle"></i></div>
+      <div>
+        <h4>We're Eco Compliant</h4>
+        <p>All operations meet the highest environmental sustainability standards.</p>
+      </div>
+    </div>
+    <div class="feature-item fade-in">
+      <div class="feature-icon green"><i class="fas fa-tools"></i></div>
+      <div>
+        <h4>We Use Best Equipment</h4>
+        <p>State-of-the-art machinery ensures efficiency and product quality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROGRESS ========== -->
+<section class="progress-section section-pad bg-light">
+  <div class="container progress-grid">
+    <div class="progress-img fade-in">
+      <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=700&q=80" alt="Growing products" loading="lazy" />
+      <div class="experience-badge">
+        <span class="exp-num">40</span>
+        <span class="exp-text">Years of<br />Experience</span>
+      </div>
+    </div>
+    <div class="progress-content fade-in">
+      <div class="section-label"><i class="fas fa-leaf"></i> Our Expertise</div>
+      <h2 class="section-title">Growing Products</h2>
+      <p class="progress-desc">Our decades of experience have made us experts in sustainable agriculture, delivering exceptional results across all product categories.</p>
+      <div class="progress-bars">
+        <div class="progress-item">
+          <div class="progress-header">
+            <span class="progress-label"><i class="fas fa-apple-alt"></i> Agriculture</span>
+            <span class="progress-pct">92%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="92"></div>
+          </div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-header">
+            <span class="progress-label"><i class="fas fa-cheese"></i> Dairy Farming</span>
+            <span class="progress-pct">78%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="78"></div>
+          </div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-header">
+            <span class="progress-label"><i class="fas fa-leaf"></i> Organic Produce</span>
+            <span class="progress-pct">85%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="85"></div>
+          </div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-header">
+            <span class="progress-label"><i class="fas fa-seedling"></i> Eco Practices</span>
+            <span class="progress-pct">95%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="95"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BLOG ========== -->
+<section class="blog section-pad" id="blog">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-label"><i class="fas fa-leaf"></i> Latest Updates</div>
+      <h2 class="section-title">News &amp; Articles</h2>
+      <p class="section-sub">Stay updated with the latest trends, tips, and news from the world of organic agriculture.</p>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card fade-in">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80" alt="Agriculture Miracle" loading="lazy" />
+          <div class="blog-cat">Farming</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta"><i class="far fa-calendar-alt"></i> March 12, 2026 &nbsp;|&nbsp; <i class="far fa-user"></i> Admin</div>
+          <h3><a href="#">Agriculture Miracle you Don't Know About</a></h3>
+          <p>Discover the incredible advancements in modern agriculture that are revolutionizing how we grow food sustainably.</p>
+          <a href="#" class="btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="blog-card fade-in">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&q=80" alt="Amount of From Bread" loading="lazy" />
+          <div class="blog-cat">Harvest</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta"><i class="far fa-calendar-alt"></i> March 8, 2026 &nbsp;|&nbsp; <i class="far fa-user"></i> Admin</div>
+          <h3><a href="#">Amount of Trom Bread &amp; Other Fruits</a></h3>
+          <p>A deep dive into grain production techniques and the surprising variety of bread crops available to modern farmers.</p>
+          <a href="#" class="btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="blog-card fade-in">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80" alt="Winter Wheat Harvest" loading="lazy" />
+          <div class="blog-cat">Seasonal</div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta"><i class="far fa-calendar-alt"></i> March 2, 2026 &nbsp;|&nbsp; <i class="far fa-user"></i> Admin</div>
+          <h3><a href="#">Winter Wheat Harvest Gathering Momentum</a></h3>
+          <p>This year's winter wheat harvest is shaping up to be exceptional. Learn what factors are driving the bumper crop.</p>
+          <a href="#" class="btn-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA BANNER ========== -->
+<section class="cta-banner">
+  <div class="cta-bg">
+    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1920&q=80" alt="Agriculture banner" loading="lazy" />
+  </div>
+  <div class="cta-overlay"></div>
+  <div class="container cta-content fade-in">
+    <p class="cta-label">Quality Guarantee</p>
+    <h2>Provide You the Highest Quality Products<br />That Meets Your Expectation</h2>
+    <a href="#contact" class="btn btn-yellow">Discover More <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer" id="contact">
+  <div class="footer-top">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <div class="footer-logo">
+          <i class="fas fa-leaf"></i>
+          <span>AGRIKOLE</span>
+        </div>
+        <p>We are dedicated to providing the finest organic agricultural products while maintaining our commitment to sustainable farming and environmental responsibility.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+          <li><a href="#projects"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+          <li><a href="#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+          <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Recent News</h4>
+        <div class="footer-news">
+          <div class="footer-news-item">
+            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=80&q=80" alt="News" loading="lazy" />
+            <div>
+              <a href="#">Agriculture Miracle you Don't Know About</a>
+              <span><i class="far fa-calendar-alt"></i> March 12, 2026</span>
+            </div>
+          </div>
+          <div class="footer-news-item">
+            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=80&q=80" alt="News" loading="lazy" />
+            <div>
+              <a href="#">Winter Wheat Harvest Gathering Momentum</a>
+              <span><i class="far fa-calendar-alt"></i> March 2, 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> 1234 Farm Road, Green Valley, CA 94102</li>
+          <li><i class="fas fa-phone"></i> +1 (800) 123-4567</li>
+          <li><i class="fas fa-envelope"></i> info@agrikole.com</li>
+          <li><i class="fas fa-clock"></i> Mon - Fri: 8:00am - 6:00pm</li>
+        </ul>
+        <form class="footer-newsletter" id="newsletterForm">
+          <input type="email" placeholder="Your email address..." required />
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>&copy; 2026 <strong>Agrikole</strong>. All rights reserved. Designed with <i class="fas fa-heart" style="color:#E6C34A"></i> for organic farming.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== BACK TO TOP ========== -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ========== VIDEO MODAL ========== -->
+<div class="video-modal" id="videoModal">
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+    <div class="video-embed">
+      <iframe
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0"
+        title="Agriculture Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        id="videoFrame"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

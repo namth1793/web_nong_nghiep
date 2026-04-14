@@ -1,7 +1,7 @@
 {
   "name": "web-nong-nghiep-backend",
   "version": "1.0.0",
-  "description": "Backend API for Agrikole agriculture landing page",
+  "description": "Backend API for The Perla Viet Nam",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

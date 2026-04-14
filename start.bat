@@ -1,9 +1,9 @@
 @echo off
 echo ============================================
-echo    AGRIKOLE - Agriculture Landing Page
+echo    THE PERLA VIET NAM
 echo ============================================
 echo.
-echo Starting server at http://localhost:3000
+echo Starting website at http://localhost:3000
 echo Press Ctrl+C to stop.
 echo.
 

@@ -21,6 +21,9 @@
   const heroEl     = document.querySelector('.hero');
   const newsletterForm = document.getElementById('newsletterForm');
 
+  /* ---- Guard: video elements may not exist ---- */
+  const hasVideo = playBtn && videoModal && videoFrame;
+
   /* ---- Navbar scroll behavior ---- */
   let lastScrollY = 0;
 
@@ -89,28 +92,25 @@
   });
 
   /* ---- Video Modal ---- */
-  const videoSrc = videoFrame.src;
+  if (hasVideo) {
+    const videoSrc = videoFrame.src;
 
-  function openModal() {
-    videoModal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    videoFrame.src = videoSrc + '&autoplay=1';
-  }
-  function closeModal() {
-    videoModal.classList.remove('open');
-    document.body.style.overflow = '';
-    videoFrame.src = videoSrc;
-  }
+    function openModal() {
+      videoModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      videoFrame.src = videoSrc + '&autoplay=1';
+    }
+    function closeModal() {
+      videoModal.classList.remove('open');
+      document.body.style.overflow = '';
+      videoFrame.src = videoSrc;
+    }
 
-  playBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    openModal();
-  });
-  modalClose.addEventListener('click', closeModal);
-  modalOverlay.addEventListener('click', closeModal);
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeModal();
-  });
+    playBtn.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
+    modalClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+  }
 
   /* ---- Testimonials Slider ---- */
   const cards = document.querySelectorAll('.testimonial-card');
